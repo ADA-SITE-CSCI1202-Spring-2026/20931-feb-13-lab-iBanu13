@@ -30,7 +30,7 @@ public class Invoice {
         this.partNum = partNum;
     }
 
-    public String setPartDesc(){
+    public String getPartDesc(){
         return partDesc;
     }
     public void setPartDesc(String partDesc){
@@ -55,5 +55,5 @@ public class Invoice {
     public double getInvoiceAmount() {
         return quantity * price;
     }
-    
+
 }
