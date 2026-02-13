@@ -1,0 +1,32 @@
+package week03.invoice;
+
+import java.util.Scanner;
+
+public class InvoiceTest {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter part number: ");
+        String partNum = input.nextLine();
+
+        System.out.print("Enter part description: ");
+        String partDesc = input.nextLine();
+
+        System.out.print("Enter quantity: ");
+        int quantity = input.nextInt();
+
+        System.out.print("Enter price per item: ");
+        double price = input.nextDouble();
+
+        Invoice invoice = new Invoice(partNum, partDesc, quantity, price);
+
+        System.out.println("Part Number: " + invoice.getPartNum());
+        System.out.println("Part Description: " + invoice.getPartDesc());
+        System.out.println("Quantity: " + invoice.getQuantity());
+        System.out.println("Price: " + invoice.getPrice());
+        System.out.println("Invoice Amount: " + invoice.getInvoiceAmount());
+        
+        input.close();
+    }
+}
