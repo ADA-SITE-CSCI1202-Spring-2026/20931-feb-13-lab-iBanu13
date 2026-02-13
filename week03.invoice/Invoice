@@ -45,7 +45,7 @@ public class Invoice {
     }
 
     public double price(){
-        return partNum;
+        return price;
     }
     public void setPrice(double price){
         this.price = price;
